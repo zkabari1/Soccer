@@ -23,10 +23,6 @@ app.use(cors());
 
 routes(app);
 
-app.get("/", (req, res) =>
-  res.send(`Our Soccer app is running on port ${PORT}`)
-);
+app.get("/", (req, res) => res.send(`Soccer app is running on port ${PORT}`));
 
-app.listen(PORT, () =>
-  console.log(`Your soccer server is running on port ${PORT}`)
-);
+app.listen(PORT, () => console.log(`Soccer server is running on port ${PORT}`));
